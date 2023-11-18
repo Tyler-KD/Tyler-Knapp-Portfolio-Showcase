@@ -3,7 +3,12 @@
 }
 
 header {
-
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
 }
 
 body {
@@ -27,17 +32,40 @@ nav {
 }
 
 nav ul {
+display: flex;
 
+list-style: none;
 }
 
 p {
 
 }
 
-.Recent Photo {
+.recent-photo {
 
 }
 
-.Graphic Art Box {
-    
+.graphic-artbox {
+
+}
+
+.central-content {
+
+}
+
+#about-me{
+
+}
+
+#work {
+
+}
+
+footer {
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
 }
