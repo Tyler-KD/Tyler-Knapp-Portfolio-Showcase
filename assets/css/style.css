@@ -13,12 +13,12 @@ header {
     justify-content: space-between;
     /* Centers inline contents within the line box */
     text-align: center;
-    background: #ccc5c5;
-    color: #000000;
+    background: #13293d;
+    color: #fcf9f9;
 }
 
 body {
-background: #b6adad;
+background: #ddcedd;
 }
 
 h1 {
@@ -83,17 +83,23 @@ width: 10%;
 /* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
 display: flex;
 flex-wrap: wrap;
+flex-direction: row;
 width: 50%;
+
 }
 
 #about-me section p {
 /* Sets width to 50% relative to parent #about-me section */
 width: 50%;
+padding: 10px;
+border-width: 1px;
 }
 
 #about-me section figure {
 /* Sets width to 15% relative to parent #about-me section */
-width: 15%;
+width: 20%;
+padding: 20px;
+border-width: 1px;
 }
 
 #about-me img {
@@ -104,7 +110,26 @@ width: 100%;
 
 
 #work {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
 
+#work h2 {
+width: 10%;
+}
+
+#work h2 section {
+display: flex;
+width: 50%;
+}
+
+#work h2 section figure {
+width: 15%;
+}
+
+#work img {
+    width: 100%;
 }
 
 footer {
