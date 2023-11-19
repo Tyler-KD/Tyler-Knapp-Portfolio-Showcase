@@ -2,17 +2,23 @@
 
 }
 
+
 header {
+    /* Sets header element to a block-level element and lays out its content (children) according to flexbox model */
     display: flex;
+    /* Sets padding on all sides to 40px */
     padding: 40px;
+    /* The items are evenly distributed within the alignment container along the main axis */
+    /* The spacing between each pair of adjacent items is the same */
     justify-content: space-between;
+    /* Centers inline contents within the line box */
     text-align: center;
     background: #ccc5c5;
     color: #000000;
 }
 
 body {
-
+background: #b6adad;
 }
 
 h1 {
@@ -32,6 +38,7 @@ nav {
 
 }
 
+/* Unlisted items set to block-level element with no list-style */
 nav ul {
 display: flex;
 list-style: none;
@@ -59,38 +66,38 @@ p {
 
 }
 
-#about-me{
+#about-me {
 display: flex;
+/* The flex items wrap onto multiple lines */
 flex-wrap: wrap;
+/* Sets about-me id to 100% width relative to parent / main */
 width: 100%;
-
 }
 
-/* #about-me p {
-width: 50%;
-
-} */
-
 #about-me h2 {
+/* Sets width of h2 to 10% relative to parent / #about-me section */
 width: 10%;
 }
 
 #about-me section {
+/* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
 display: flex;
 flex-wrap: wrap;
 width: 50%;
 }
 
 #about-me section p {
+/* Sets width to 50% relative to parent #about-me section */
 width: 50%;
 }
 
 #about-me section figure {
+/* Sets width to 15% relative to parent #about-me section */
 width: 15%;
-
 }
 
 #about-me img {
+/* Sets width to 100% relative to parent #about-me section figure */
 width: 100%;
 }
 
