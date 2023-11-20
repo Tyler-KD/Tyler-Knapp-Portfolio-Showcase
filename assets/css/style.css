@@ -82,9 +82,8 @@ p {
     /* The flex items wrap onto multiple lines */
     flex-wrap: wrap;
     /* Sets about-me id to 100% width relative to parent / main */
-    width: 140%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    justify-content: center;
+    width: 120%;
 }
 
 #about-me h2 {
@@ -168,6 +167,11 @@ p {
     width: 100%;
     border-style: solid;
     border-color: var(--light-green);
+}
+
+#third-application {
+margin-left: 20px;
+margin-right: 20px;
 }
 
 footer {
