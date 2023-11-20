@@ -1,7 +1,15 @@
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
 :root {
+    --light-green: rgb(102, 185, 149);
+    --light-blue: #4e539b;
+    --dark-blue: #13293d;
+    /* You can use it with any value that is repeated throughout the sheet */
+    --border-radius: 50px;
+  }
 
-}
-
+  body {
+    background: #ddcedd;
+    }
 
 header {
     /* Sets header element to a block-level element and lays out its content (children) according to flexbox model */
@@ -13,38 +21,35 @@ header {
     justify-content: space-between;
     /* Centers inline contents within the line box */
     text-align: center;
-    background: #13293d;
+    background: var(--dark-blue);
     color: #fcf9f9;
-}
-
-header nav {
-
-}
-
-/* Unlisted items set to block-level element with no list-style */
-header nav ul {
-display: flex;
-list-style: none;
-}
-
-header nav ul li {
-color: rgb(102, 185, 149);
-}
-
-header a {
-color: rgb(102, 185, 149);
-}
-
-body {
-background: #ddcedd;
 }
 
 h1 {
     padding: 15px;
-    font-size: 200%;
-    background: rgb(102, 185, 149);
+    font-size: 240%;
+    background: var(--light-green);
     color: black;
 
+}
+header nav {
+    padding-right: 4%;
+    font-size: 1.5em;
+}
+
+/* Unlisted items set to block-level element with no list-style */
+    header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    /* Refer to CSS values by the name of the custom property assigned it */
+    color: var(--light-green);
+}
+
+header a {
+    color: var(--light-green);
 }
 
 h2 {
@@ -72,94 +77,94 @@ p {
 }
 
 #about-me {
-display: flex;
-/* The flex items wrap onto multiple lines */
-flex-wrap: wrap;
-/* Sets about-me id to 100% width relative to parent / main */
-width: 100%;
+    display: flex;
+    /* The flex items wrap onto multiple lines */
+    flex-wrap: wrap;
+    /* Sets about-me id to 100% width relative to parent / main */
+    width: 140%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #about-me h2 {
-/* Sets width of h2 to 10% relative to parent / #about-me section */
-width: 10%;
-text-align: center;
-color: #4e539b;
-font-size: 1.5em;
+    /* Sets width of h2 to 10% relative to parent / #about-me section */
+    width: 10%;
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 2em;
 }
 
 #about-me section {
-/* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-width: 80%;
-padding-left: 10%;
-padding-bottom: 10%;
+    /* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
 }
 
 #about-me section p {
-/* Sets width to 50% relative to parent #about-me section */
-width: 50%;
-padding: 10px;
-border-width: 1px;
+    /* Sets width to 50% relative to parent #about-me section */
+    width: 50%;
+    padding: 10px;
+    border-width: 1px;
 }
 
 #about-me section figure {
-/* Sets width to 15% relative to parent #about-me section */
-width: 20%;
-padding: 20px;
-border-width: 1px;
+    /* Sets width to 15% relative to parent #about-me section */
+    width: 20%;
+    padding: 20px;
+    border-width: 1px;
 }
 
 #about-me img {
-/* Sets width to 100% relative to parent #about-me section figure */
-width: 100%;
+    /* Sets width to 100% relative to parent #about-me section figure */
+    width: 100%;
 }
 
 
 
 #work {
-display: flex;
-flex-wrap: wrap;
-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 121%;
 }
 
 #work h2 {
-width: 10%;
-text-align: center;
-color: #4e539b;
-font-size: 1.5em;
+    width: 10%;
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 2em;
 }
 
 #work section {
-display: flex;
-flex-direction: column;
-width: 58%;
-padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    padding-left: 10%;
 }
 
 #work h2 section figure {
-width: 15%;
+    width: 15%;
 }
 
 #work img {
-width: 100%;
-border-style: solid;
-border-color: rgb(102, 185, 149);
+    width: 100%;
+    border-style: solid;
+    border-color: var(--light-green);
 }
 
 footer {
-display: flex;
-padding: 60px;
-justify-content: space-between;
-text-align: center;
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+    text-align: center;
 }
 
 footer h4 {
-width: 10%;
-text-align: center;
-color: #4e539b;
-font-size: 1.5em;
+    width: 10%;
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 2em;
 }
 
 footer nav {
@@ -167,6 +172,7 @@ footer nav {
     flex-wrap: wrap;
     flex-direction: row;
     width: 63%;
+    font-size: 1.5em;
     
 }
 
@@ -176,9 +182,9 @@ footer nav ul {
 }
 
 footer li {
-color: #4e539b;
+    color: var(--light-blue);
 }
 
 footer a {
-color: #4e539b;
+    color: var(--light-blue);
 }
