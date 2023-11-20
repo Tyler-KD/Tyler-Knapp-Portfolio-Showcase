@@ -10,6 +10,7 @@
 body {
     background: #ddcedd;
     overflow-x: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -99,6 +100,9 @@ p {}
     width: 50%;
     padding: 10px;
     border-width: 1px;
+    line-height: 1.5;
+    font-size: 1.2em;
+    
 }
 
 #about-me section figure {
@@ -165,6 +169,12 @@ p {}
 #first-application {
     position: relative;
     padding-bottom: 1em;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#first-application:hover::after {
+    opacity: none;
 }
 
 #first-application h3 {
@@ -182,6 +192,8 @@ p {}
 
 #second-application {
     position: relative;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 #second-application h3 {
@@ -201,6 +213,8 @@ p {}
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 #third-application h3 {
@@ -218,6 +232,8 @@ p {}
 
 #fourth-application {
     position: relative;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 #fourth-application h3 {
@@ -270,6 +286,13 @@ footer a {
     color: var(--light-blue);
 }
 
+a { 
+
+}
+a:link, a:visited {
+
+}
+
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header changes color */
@@ -292,6 +315,7 @@ footer a {
         justify-content: center;
     }
 }
+
 
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
