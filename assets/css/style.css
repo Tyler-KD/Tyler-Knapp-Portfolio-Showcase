@@ -272,6 +272,7 @@ p {}
 footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding: 60px;
     justify-content: space-between;
     text-align: center;
@@ -295,6 +296,7 @@ footer nav {
 
 footer nav ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
 }
 
