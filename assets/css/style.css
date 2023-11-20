@@ -9,6 +9,7 @@
 
   body {
     background: #ddcedd;
+    overflow-x: hidden;
     }
 
 header {
@@ -125,9 +126,25 @@ p {
 
 #work {
     display: flex;
-    flex-wrap: wrap;
-    width: 121%;
+    justify-content: center;
+    width: 100%;
+    /* flex-wrap: wrap;
+    width: 121%; */
 }
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+#inner-container {
+    display: flex;
+}
+
+/* .inner-boxes {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
 
 #work h2 {
     width: 10%;
@@ -136,12 +153,12 @@ p {
     font-size: 2em;
 }
 
-#work section {
+/* #work section {
     display: flex;
     flex-direction: column;
     width: 58%;
     padding-left: 10%;
-}
+} */
 
 #work h2 section figure {
     width: 15%;
