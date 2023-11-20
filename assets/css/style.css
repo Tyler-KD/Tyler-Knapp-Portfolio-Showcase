@@ -355,8 +355,15 @@ footer a:hover {
     }
 
     footer {
+        display: flex;
+        flex-direction: column;
         background-color: #bb8588;
         justify-content: center;
+    }
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+
     }
 }
 
@@ -369,6 +376,11 @@ footer a:hover {
 
     #work {
 
+    }
+    footer h4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 4em;
     }
 
     #about-me {
