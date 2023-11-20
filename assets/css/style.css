@@ -84,6 +84,8 @@ p {
     /* Sets about-me id to 100% width relative to parent / main */
     justify-content: center;
     width: 120%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #about-me h2 {
@@ -171,6 +173,7 @@ p {
 
 #first-application {
     position: relative;
+    padding-bottom: 1em;
 }
 
 #first-application h3 {    
@@ -191,7 +194,7 @@ p {
 
 #second-application h3 {    
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     border-style: solid;
     background: var(--light-green);
     border-color: var(--light-green);
@@ -210,7 +213,7 @@ p {
 
 #third-application h3 {    
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     border-style: solid;
     background: var(--light-green);
     border-color: var(--light-green);
@@ -225,9 +228,9 @@ p {
     position: relative;
 }
 
-/* #fourth-application h3 {    
+#fourth-application h3 {    
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     border-style: solid;
     background: var(--light-green);
     border-color: var(--light-green);
@@ -236,7 +239,7 @@ p {
     color: var(--light-blue);
     width: 200px;
     height: 50px;
-} */
+}
 
 footer {
     display: flex;
