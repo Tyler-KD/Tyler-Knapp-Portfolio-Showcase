@@ -56,6 +56,12 @@ header a {
     color: var(--light-green);
 }
 
+header a:hover { 
+    background-color: var(--light-green);
+    color: var(--light-blue);
+    z-index: 1;
+}
+
 h2 {}
 
 h3 {}
@@ -300,11 +306,10 @@ footer a {
     color: var(--light-blue);
 }
 
-a { 
-
-}
-a:link, a:visited {
-
+footer a:hover {
+    background-color: var(--light-blue);
+    color: var(--light-green);
+    z-index: 1;
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -317,6 +322,7 @@ a:link, a:visited {
     }
 
     #about-me {
+        
 
     }
 
