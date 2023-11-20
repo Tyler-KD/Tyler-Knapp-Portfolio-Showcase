@@ -121,8 +121,6 @@ p {
     width: 100%;
 }
 
-
-
 #work {
     display: flex;
     justify-content: center;
@@ -130,11 +128,13 @@ p {
     /* flex-wrap: wrap;
     width: 121%; */
 }
+
 #main-container {
     display: flex;
     flex-direction: column;
     width: 65%;
 }
+
 #inner-container {
     display: flex;
 }
@@ -169,10 +169,74 @@ p {
     border-color: var(--light-green);
 }
 
-#third-application {
-margin-left: 20px;
-margin-right: 20px;
+#first-application {
+    position: relative;
 }
+
+#first-application h3 {    
+    position: absolute;
+    bottom: 100px;
+    border-style: solid;
+    background: var(--light-green);
+    border-color: var(--light-green);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--light-blue);
+    width: 200px;
+    height: 50px;
+}
+#second-application {
+    position: relative;
+}
+
+#second-application h3 {    
+    position: absolute;
+    bottom: 100px;
+    border-style: solid;
+    background: var(--light-green);
+    border-color: var(--light-green);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--light-blue);
+    width: 200px;
+    height: 50px;
+}
+
+#third-application {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#third-application h3 {    
+    position: absolute;
+    bottom: 100px;
+    border-style: solid;
+    background: var(--light-green);
+    border-color: var(--light-green);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--light-blue);
+    width: 200px;
+    height: 50px;
+}
+
+#fourth-application {
+    position: relative;
+}
+
+/* #fourth-application h3 {    
+    position: absolute;
+    bottom: 100px;
+    border-style: solid;
+    background: var(--light-green);
+    border-color: var(--light-green);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--light-blue);
+    width: 200px;
+    height: 50px;
+} */
 
 footer {
     display: flex;
