@@ -5,17 +5,18 @@
     --dark-blue: #13293d;
     /* You can use it with any value that is repeated throughout the sheet */
     --border-radius: 50px;
-  }
+}
 
-  body {
+body {
     background: #ddcedd;
     overflow-x: hidden;
-    }
+}
 
 header {
     /* Sets header element to a block-level element and lays out its content (children) according to flexbox model */
     display: flex;
     /* Sets padding on all sides to 40px */
+    flex-wrap: wrap;
     padding: 40px;
     /* The items are evenly distributed within the alignment container along the main axis */
     /* The spacing between each pair of adjacent items is the same */
@@ -33,13 +34,14 @@ h1 {
     color: black;
 
 }
+
 header nav {
     padding-right: 4%;
     font-size: 1.5em;
 }
 
 /* Unlisted items set to block-level element with no list-style */
-    header nav ul {
+header nav ul {
     display: flex;
     list-style: none;
 }
@@ -53,29 +55,17 @@ header a {
     color: var(--light-green);
 }
 
-h2 {
+h2 {}
 
-}
+h3 {}
 
-h3 {
+p {}
 
-}
+.recent-photo {}
 
-p {
+.graphic-artbox {}
 
-}
-
-.recent-photo {
-
-}
-
-.graphic-artbox {
-
-}
-
-.central-content {
-
-}
+.central-content {}
 
 #about-me {
     display: flex;
@@ -125,6 +115,7 @@ p {
 
 #work {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     /* flex-wrap: wrap;
@@ -176,7 +167,7 @@ p {
     padding-bottom: 1em;
 }
 
-#first-application h3 {    
+#first-application h3 {
     position: absolute;
     bottom: 100px;
     border-style: solid;
@@ -188,11 +179,12 @@ p {
     width: 200px;
     height: 50px;
 }
+
 #second-application {
     position: relative;
 }
 
-#second-application h3 {    
+#second-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -211,7 +203,7 @@ p {
     margin-right: 20px;
 }
 
-#third-application h3 {    
+#third-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -228,7 +220,7 @@ p {
     position: relative;
 }
 
-#fourth-application h3 {    
+#fourth-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -243,6 +235,7 @@ p {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     padding: 60px;
     justify-content: space-between;
     text-align: center;
@@ -261,7 +254,7 @@ footer nav {
     flex-direction: row;
     width: 63%;
     font-size: 1.5em;
-    
+
 }
 
 footer nav ul {
@@ -275,4 +268,69 @@ footer li {
 
 footer a {
     color: var(--light-blue);
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+        background: #772014;
+        justify-content: center;
+    }
+
+    #about-me {
+
+    }
+
+    #work {
+
+    }
+
+    footer {
+        background: #772014;
+        justify-content: center;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    header {
+        background-color: #bb8588;
+        justify-content: center;
+    }
+
+    #work {
+
+    }
+
+    #about-me {
+
+    }
+
+    footer {
+        background-color: #bb8588;
+        justify-content: center;
+    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    header {
+        background-color: #8ac4ff;
+        justify-content: center;
+    }
+
+    #work {
+
+    }
+
+    #about-me {
+        
+    }
+
+    footer {
+        background-color: #8ac4ff;
+        justify-content: center;
+    }
 }
