@@ -8,8 +8,7 @@
 }
 
 body {
-    background: #ddcedd;
-    overflow-x: hidden;
+    background: #ddcedd;    
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -18,7 +17,6 @@ header {
     display: flex;
     /* Sets padding on all sides to 40px */
     flex-wrap: wrap;
-    padding: 40px;
     /* The items are evenly distributed within the alignment container along the main axis */
     /* The spacing between each pair of adjacent items is the same */
     justify-content: space-between;
@@ -37,7 +35,7 @@ h1 {
 }
 
 header nav {
-    padding-right: 4%;
+    margin-right: 6em;
     font-size: 1.5em;
 }
 
@@ -79,10 +77,10 @@ p {}
     /* The flex items wrap onto multiple lines */
     flex-wrap: wrap;
     /* Sets about-me id to 100% width relative to parent / main */
-    justify-content: center;
-    width: 120%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 #about-me h2 {
@@ -91,11 +89,13 @@ p {}
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    border-right: solid;
 }
 
 #about-me section {
     /* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
     width: 80%;
@@ -104,7 +104,6 @@ p {}
 #about-me section p {
     /* Sets width to 50% relative to parent #about-me section */
     width: 50%;
-    padding: 10px;
     border-width: 1px;
     line-height: 1.5;
     font-size: 1.2em;
@@ -113,8 +112,7 @@ p {}
 
 #about-me section figure {
     /* Sets width to 15% relative to parent #about-me section */
-    width: 20%;
-    padding: 20px;
+    width: 22%;
     border-width: 1px;
 }
 
@@ -126,7 +124,7 @@ p {}
 #work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     /* flex-wrap: wrap;
     width: 121%; */
@@ -140,6 +138,8 @@ p {}
 
 #inner-container {
     display: flex;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 /* .inner-boxes {    
@@ -149,10 +149,11 @@ p {}
 } */
 
 #work h2 {
-    width: 10%;
+    width: 12%;
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    border-right: solid;
 }
 
 /* #work section {
@@ -273,22 +274,25 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 60px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 footer h4 {
-    width: 10%;
+    width: 11%;
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    border-right: solid;
 }
 
 footer nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 63%;
     font-size: 1.5em;
 
@@ -319,22 +323,70 @@ footer a:hover {
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     header {
+        display: flex;
+        flex-wrap: wrap;
         background: #772014;
         justify-content: center;
     }
 
-    #about-me {
-        
-
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        /* text-align: center; */
     }
 
-    #work {
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        /* text-align: center; */
+    }
 
+    
+
+    #about-me h2 {
+        border-right: none;
+    }
+
+    
+
+    /* #work {
+        display: flex;
+        justify-content: center;
+
+    } */
+
+    #work h2 {
+        border-right: none;
     }
 
     footer {
+        display: flex;
+        flex-wrap: wrap;
         background: #772014;
         justify-content: center;
+    }
+
+    footer h4 {
+        border-right: none;
+    }
+
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
     }
 }
 
@@ -346,24 +398,72 @@ footer a:hover {
         justify-content: center;
     }
 
-    #work {
-
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        /* text-align: center; */
     }
 
-    #about-me {
-
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        /* text-align: center; */
     }
 
-    footer {
+    /* #about-me {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #about-me section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+    } */
+
+    /* #work {
+        display: flex; 
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+    } */
+
+    footer {
+        /* display: flex;
+        flex-wrap: wrap; */
         background-color: #bb8588;
         justify-content: center;
     }
-    footer nav ul {
+    /* footer nav ul {
         display: flex;
         flex-direction: column;
+    } */
 
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
     }
 }
 
@@ -374,21 +474,102 @@ footer a:hover {
         justify-content: center;
     }
 
-    #work {
-
-    }
-    footer h4 {
+    header nav {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 4em;
+        justify-content: center;
+        margin: center;
+        /* text-align: center; */
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;
+        /* text-align: center; */
     }
 
     #about-me {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;
         
     }
 
+    #about-me section {     
+        width: 100%;   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;
+
+    }
+
+    #work {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+
+    #main-container {
+        width: 100%;   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;
+
+    }
+    #inner-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        
+
+   }
+    /* footer h4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 4em;
+    } */
+
+    
+
     footer {
+        display: flex;
+        flex-wrap: wrap;  
+        flex-direction: column;      
         background-color: #8ac4ff;
         justify-content: center;
+        margin: center;
+    }
+    footer h4 {
+        justify-content: center;
+        margin: center;
+    }
+
+    footer nav {        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;        
+        
+    }
+    footer nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;
     }
 }
