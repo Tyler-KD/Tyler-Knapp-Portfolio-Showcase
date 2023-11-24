@@ -16,52 +16,61 @@
 <body>
     <header>
         <!-- Header of page -->
-        <h1>Tyler Knapp</h1>
+        <h1>Tyler Knapp</h1>        
         <nav>
             <ul>
                 <!-- Three links in header which point to sections -->
+                <!-- #about-me link scrolls to corresponding #about-me section -->
                 <li><a href="#about-me">About Me</a></li>
+                <!-- #work link scrolls to corresponding #work section -->
                 <li><a href="#work">Work</a></li>
+                <!-- #contact-me link scrolls to corresponding #contact-me section -->
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <figure class="graphic-artbox" alt="Graphic Art Box"></figure>
+    <!-- <figure class="graphic-artbox" alt="Graphic Art Box"></figure> -->
 
     <main class="central-content">
         <!-- About Me section -->
         <section id="about-me" class="about-me">
             <h2>About Me</h2>
             <section id="about-me-inner">
-                <p>Hi, my name is Tyler Knapp and I'm a graduate from Florida State University with a Bachelor of Science Degree in Biology.  Currently, I'm an eager student in Rice University's bootcamp for full-stack web
-                    development.  My background is in biological, genetic, and optical laboratories. Among my full-stack work includes
+                <!-- Paragraph for About Me section -->
+                <p>Hi, my name is Tyler Knapp and I'm a graduate from Florida State University with a Bachelor of
+                    Science Degree in Biology. Currently, I'm an eager student in Rice University's bootcamp for
+                    full-stack web
+                    development. My background is in biological, genetic, and optical laboratories. Among my full-stack
+                    work includes
                     a Marketing Website Refactor in which I refactored for accessibility.
+                    <!-- <br><br> makes double line break within paragraph -->
 
                     <br><br>As an undergraduate tutor, I've learned soft skills to complement my work with other peers
                     on web-development projects.
-                    Some interests of my mine are photography, experiencing different cultures, exploring different
-                    parts of the world, and editing through post-processing software.
+                    Some interests of my mine are photography, experiencing different cultures, traveling around the world, and editing through post-processing software.
                 </p>
                 <figure>
                     <!-- Recent Photo to go with About Me section -->
                     <img src="./assets/images/Photo 10-29-23.jpg" alt="recent photo">
                 </figure>
-
             </section>
 
         </section>
 
         <!-- Work section -->
         <section id="work" class="work">
+            <!-- H2 Work -->
             <h2>Work</h2>
             <section id="main-container">
                 <!-- First Application image is largest and most important of applications -->
                 <figure id="first-application">
+                    <!-- Link to First Application deployed website -->
                     <a href="https://tyler-kd.github.io/Marketing-Refactor-01/">
                         <img src="./assets/images/Screenshot Marketing Refactor.png"
-                            alt="First Application Placeholder Image">
+                            alt="First Application Marketing Refactor Image">
                     </a>
+                    <!-- H3 Marketing Refactor 01 -->
                     <h3>Marketing Refactor 01 <br>HTML/CSS/Git</h3>
                 </figure>
 
@@ -69,18 +78,21 @@
                     <!-- 2nd Application image -->
                     <figure id="second-application">
                         <img src="./assets/images/IMG_6310.JPG" alt="2nd Application Placeholder Image">
+                        <!-- H3 2nd Application -->
                         <h3>2nd Application <br>(Coming Soon)</h3>
                     </figure>
 
                     <!-- 3rd Application image -->
                     <figure id="third-application">
                         <img src="./assets/images/IMG_6310.JPG" alt="3rd Application Placeholder Image">
+                        <!-- H3 3rd Application -->
                         <h3>3rd Application <br>(Coming Soon)</h3>
                     </figure>
 
                     <!-- 4th Application image -->
                     <figure id="fourth-application">
                         <img src="./assets/images/IMG_6310.JPG" alt="4th Application Placeholder Image">
+                        <!-- H3 4th Application -->
                         <h3>4th Application <br>(Coming Soon)</h3>
                     </figure>
                 </div>
@@ -95,9 +107,13 @@
     <nav>
         <ul>
             <!-- Three Contact Me links in footer -->
-            <li>(561) 801-5556</li>
+            <!-- Link to Phone Number -->
+            <li><a href="tel:5618015556">(561)801-5556</a></li>
+            <!-- Link to Email Account -->
             <li><a href="mailto:tyler.kd.knapp@gmail.com">tyler.kd.knapp@gmail.com</a></li>
+            <!-- Link to Website -->
             <li>Website <br>(Coming Soon)</li>
+            <!-- Link to Github Profile -->
             <li><a href="https://github.com/Tyler-KD">Github</a></li>
         </ul>
     </nav>

@@ -26,6 +26,7 @@ header {
     color: #fcf9f9;
 }
 
+
 h1 {
     padding: 15px;
     font-size: 240%;
@@ -59,18 +60,6 @@ header a:hover {
     color: var(--light-blue);
     z-index: 1;
 }
-
-h2 {}
-
-h3 {}
-
-p {}
-
-.recent-photo {}
-
-.graphic-artbox {}
-
-.central-content {}
 
 #about-me {
     display: flex;
@@ -126,8 +115,6 @@ p {}
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    /* flex-wrap: wrap;
-    width: 121%; */
 }
 
 #main-container {
@@ -142,12 +129,6 @@ p {}
     padding-bottom: 3em;
 }
 
-/* .inner-boxes {    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
 #work h2 {
     width: 12%;
     text-align: center;
@@ -155,13 +136,6 @@ p {}
     font-size: 2em;
     border-right: solid;
 }
-
-/* #work section {
-    display: flex;
-    flex-direction: column;
-    width: 58%;
-    padding-left: 10%;
-} */
 
 #work h2 section figure {
     width: 15%;
@@ -334,7 +308,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        /* text-align: center; */
     }
 
     header nav ul {
@@ -342,25 +315,22 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        /* text-align: center; */
     }
-
-    
 
     #about-me h2 {
         border-right: none;
-    }
-
-    
-
-    /* #work {
         display: flex;
         justify-content: center;
-
-    } */
+    }
 
     #work h2 {
         border-right: none;
+        display: flex;
+        justify-content: center;
+    }
+       
+    #first-application h3, #second-application h3, #third-application h3, #fourth-application h3 {
+        width: auto;
     }
 
     footer {
@@ -378,8 +348,7 @@ footer a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: auto;
-        
+        margin: auto;     
     }
 
     footer nav ul {
@@ -403,7 +372,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        /* text-align: center; */
     }
 
     header nav ul {
@@ -411,51 +379,61 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        /* text-align: center; */
     }
 
-    /* #about-me {
+    #about-me {
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: center;        
+    }
+
+    #about-me section {     
+        width: 100%;   
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        margin: center;
+    }
+
+    #work {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    #main-container {
+        width: 100%;   
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        margin: auto;
+        margin: center;
     }
 
-    #about-me section {
+    #inner-container {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-
-    } */
-
-    /* #work {
-        display: flex; 
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-
-    } */
+        justify-content: center;      
+    }
 
     footer {
-        /* display: flex;
-        flex-wrap: wrap; */
         background-color: #bb8588;
         justify-content: center;
     }
-    /* footer nav ul {
-        display: flex;
-        flex-direction: column;
-    } */
 
     footer nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: auto;
-        
+        margin: auto;       
     }
 
     footer nav ul {
@@ -479,7 +457,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: center;
-        /* text-align: center; */
     }
 
     header nav ul {
@@ -487,37 +464,32 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: center;
-        /* text-align: center; */
     }
 
     #about-me {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: wrap;
         justify-content: center;
-        margin: center;
-        
+        margin: center;        
     }
 
     #about-me section {     
         width: 100%;   
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
         margin: center;
-
     }
 
     #work {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
-        
-
     }
 
     #main-container {
@@ -527,24 +499,15 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: center;
         margin: center;
-
     }
+
     #inner-container {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        
-
-   }
-    /* footer h4 {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 4em;
-    } */
-
-    
+        justify-content: center;      
+    }
 
     footer {
         display: flex;
@@ -554,6 +517,7 @@ footer a:hover {
         justify-content: center;
         margin: center;
     }
+
     footer h4 {
         justify-content: center;
         margin: center;
@@ -563,9 +527,9 @@ footer a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: center;        
-        
+        margin: center;               
     }
+
     footer nav ul {
         display: flex;
         flex-wrap: wrap;
