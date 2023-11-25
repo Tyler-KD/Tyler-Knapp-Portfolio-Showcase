@@ -12,6 +12,10 @@ Attached is a screenshot of the webpage:
 
 ![Portfolio Screenshot](<assets/images/Portfolio Screenshot.png>)
 
+## Deployed Site
+
+[Deployed Site](https://tyler-kd.github.io/Tyler-Knapp-Portfolio-Showcase/)
+
 ## Credits
 
 Followed tutorial lessons:
