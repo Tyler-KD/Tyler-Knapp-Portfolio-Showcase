@@ -3,8 +3,6 @@
     --light-green: rgb(102, 185, 149);
     --light-blue: #4e539b;
     --dark-blue: #13293d;
-    /* You can use it with any value that is repeated throughout the sheet */
-    --border-radius: 50px;
 }
 
 body {
@@ -104,11 +102,15 @@ header a:hover {
 #about-me section p {
     /* Sets width to 50% relative to parent #about-me section */
     width: 50%;
+    text-indent: 3em;
     border-width: 1px;
     line-height: 1.5;
-    font-size: 1.2em;
-    
+    font-size: 1.2em;    
 }
+
+/* #about-me br {
+    text-indent: 3em;
+} */
 
 #about-me section figure {
     /* Sets width to 22% relative to parent #about-me section */
