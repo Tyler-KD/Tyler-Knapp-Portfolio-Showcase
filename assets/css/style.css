@@ -15,26 +15,32 @@ body {
 header {
     /* Sets header element to a block-level element and lays out its content (children) according to flexbox model */
     display: flex;
-    /* Sets padding on all sides to 40px */
+    /* The flex items wrap onto multiple lines */
     flex-wrap: wrap;
     /* The items are evenly distributed within the alignment container along the main axis */
     /* The spacing between each pair of adjacent items is the same */
     justify-content: space-between;
     /* Centers inline contents within the line box */
     text-align: center;
-    background: var(--dark-blue);
-    color: #fcf9f9;
+    /* Background-image property sets a background image on header element */
+    background-image: url(../images/Gradient\ Resize.png);
+    /* The background image is not repeated when resizing */
+    background-repeat: no-repeat;
+    /* Scales the background image while preserving its ratio to the smallest possible size to fill the container / header leaving no empty space */
+    background-size: cover;
 }
 
 
 h1 {
     padding: 15px;
     font-size: 240%;
+    /* Refer to CSS values by the name of the custom property var(--light-green) assigned it */
     background: var(--light-green);
     color: black;
 
 }
 
+/* header nav set with margin-right 6 relative units and font-size 1.5 relative units relative to neighboring elements */
 header nav {
     margin-right: 6em;
     font-size: 1.5em;
@@ -47,7 +53,6 @@ header nav ul {
 }
 
 header nav ul li {
-    /* Refer to CSS values by the name of the custom property assigned it */
     color: var(--light-green);
 }
 
@@ -55,18 +60,21 @@ header a {
     color: var(--light-green);
 }
 
+/* Hover selector allows you to select and style an element when you mouse over it */
 header a:hover { 
+    /* Background-color turns var(--light-green) after hovering over navigation links */
     background-color: var(--light-green);
+    /* Color turns var(--light-blue) after hovering over navigation links */
     color: var(--light-blue);
     z-index: 1;
 }
 
 #about-me {
-    display: flex;
-    /* The flex items wrap onto multiple lines */
+    display: flex;    
     flex-wrap: wrap;
-    /* Sets about-me id to 100% width relative to parent / main */
+    /* The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-end side */
     justify-content: flex-end;
+    /* Sets about-me section to 100% width relative to parent / main */
     width: 100%;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -78,14 +86,17 @@ header a:hover {
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    /* Border-right: solid sets a solid border to the right side of #about-me h2 */
     border-right: solid;
 }
 
 #about-me section {
-    /* Sets #about-me section to block-level element, flex items wrap onto multiple lines, and width 50% relative to parent #about-me h2 */
+    /* Sets #about-me section to block-level element */
     display: flex;
+    /* The items are evenly distributed within the alignment container along the main axis. Items will have equal space around them */
     justify-content: space-evenly;
     flex-wrap: wrap;
+    /* The flex container's main-axis is defined to be the same as the text direction */
     flex-direction: row;
     width: 80%;
 }
@@ -100,7 +111,7 @@ header a:hover {
 }
 
 #about-me section figure {
-    /* Sets width to 15% relative to parent #about-me section */
+    /* Sets width to 22% relative to parent #about-me section */
     width: 22%;
     border-width: 1px;
 }
@@ -117,12 +128,14 @@ header a:hover {
     width: 100%;
 }
 
+/* Main-container id for First Application section */
 #main-container {
     display: flex;
     flex-direction: column;
     width: 65%;
 }
 
+/* Inner-container id for Second, Third, and Fourth Application divison */
 #inner-container {
     display: flex;
     padding-top: 3em;
@@ -134,6 +147,7 @@ header a:hover {
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    /* Border-right: solid sets a solid border to the right side of #work h2 */
     border-right: solid;
 }
 
@@ -143,22 +157,29 @@ header a:hover {
 
 #work img {
     width: 100%;
+    /* Displays single, straight, and solid lines around #work img element */
     border-style: solid;
     border-color: var(--light-green);
 }
 
 #first-application {
+    /* The element is positioned to the normal flow of the document */
     position: relative;
     padding-bottom: 1em;
+    /* Cursor is changed to a pointer when mousing over First Application figure */
     cursor: pointer;
+    /* Sets transparency of First Application figure to half or 0.5 */
     opacity: 0.5;
 }
 
+/* Resets transparency back to normal or 1.0 after hovering over First Application figure */
 #first-application:hover {
     opacity: 1.0;
 }
 
 #first-application h3 {
+    /* The element is removed from the normal document flow */
+    /* The element is positioned releative to its closest positioned ancestor */
     position: absolute;
     bottom: 100px;
     border-style: solid;
@@ -171,43 +192,34 @@ header a:hover {
     height: 50px;
 }
 
-#second-application {
+#second-application, #fourth-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
 }
 
-#second-application:hover {
-    opacity: 1.0;
-}
-
-#second-application h3 {
-    position: absolute;
-    bottom: 50px;
-    border-style: solid;
-    background: var(--light-green);
-    border-color: var(--light-green);
-    font-size: 1.2em;
-    text-align: center;
-    color: var(--light-blue);
-    width: 200px;
-    height: 50px;
-}
-
 #third-application {
     position: relative;
+    /* Third-application figure set with left of margin 20px from neighboring element */
     margin-left: 20px;
+    /* Third-application figure set with right of margin 20px from neighboring element */
     margin-right: 20px;
     cursor: pointer;
     opacity: 0.5;
 }
 
-#third-application:hover {
+/* #fourth-application {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.5;
+} */
+
+/* Resets transparency back to normal or 1.0 after hovering over Second, Third, and Fourth Application figure */
+#second-application:hover, #third-application:hover, #fourth-application:hover {
     opacity: 1.0;
 }
 
-
-#third-application h3 {
+#second-application h3, #third-application h3, #fourth-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -220,16 +232,18 @@ header a:hover {
     height: 50px;
 }
 
-#fourth-application {
-    position: relative;
-    cursor: pointer;
-    opacity: 0.5;
+/* #third-application h3 {
+    position: absolute;
+    bottom: 50px;
+    border-style: solid;
+    background: var(--light-green);
+    border-color: var(--light-green);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--light-blue);
+    width: 200px;
+    height: 50px;
 }
-
-#fourth-application:hover {
-    opacity: 1.0;
-}
-
 
 #fourth-application h3 {
     position: absolute;
@@ -242,9 +256,10 @@ header a:hover {
     color: var(--light-blue);
     width: 200px;
     height: 50px;
-}
+} */
 
 footer {
+    /* Sets footer element to block-level element */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -255,10 +270,12 @@ footer {
 }
 
 footer h4 {
+     /* Sets footer h4 to 11% width relative to parent / footer */
     width: 11%;
     text-align: center;
     color: var(--light-blue);
     font-size: 2em;
+    /* Border-right: solid sets a solid border to the right side of footer h4 */
     border-right: solid;
 }
 
@@ -267,13 +284,16 @@ footer nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+     /* Sets footer nav to 63% width relative to parent / footer */
     width: 63%;
     font-size: 1.5em;
 
 }
 
+/* Unlisted items set to block-level element with no list-style */
 footer nav ul {
     display: flex;
+    /* The flex container's main-axis is defined to be the same as the text direction */
     flex-direction: row;
     list-style: none;
 }
@@ -286,6 +306,8 @@ footer a {
     color: var(--light-blue);
 }
 
+/* Footer anchor elements set to background-color: var(--light-blue) and
+color: var(--light-green) after hovering over links */
 footer a:hover {
     background-color: var(--light-blue);
     color: var(--light-green);
@@ -294,68 +316,53 @@ footer a:hover {
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
-/* Tablets - header changes color */
+/* Tablets - footer changes color */
 @media screen and (max-width: 992px) {
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        background: #772014;
-        justify-content: center;
-    }
 
-    header nav {
+    /* Header navigation and unlisted items are set to block level elements, flex items wrap onto multiple lines, 
+    items are packed flush to each other toward the center, and have the browser calculate and select a margin at 992px or smaller  */
+    header nav, header nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
     }
 
-    header nav ul {
+    /* header nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-    }
+    } */
 
-    #about-me h2 {
+    /* #about-me h2 and footer h4 have solid borders to the right removed at 992px or smaller */
+    #about-me h2, footer h4 {
         border-right: none;
-        display: flex;
-        justify-content: center;
         width: auto;
-    }
+    }  
+
+    /* footer h4 {
+        border-right: none;
+        width: auto;
+    } */
 
     #work h2 {
         border-right: none;
         display: flex;
         justify-content: center;
     }
-       
+    
+    /* All application h3s have the browser calculate and select a width at 992px or smaller */
     #first-application h3, #second-application h3, #third-application h3, #fourth-application h3 {
         width: auto;
     }
 
+    /* Footer background-color changes to hex #772014 at 992px or smaller */
     footer {
-        /* display: flex;
-        flex-wrap: wrap; */
-        background: #772014;
-        /* justify-content: center; */
+        background-color: #772014;
     }
-
-    footer h4 {
-        /* display: flex; */
-        border-right: none;
-        width: auto;
-    }
-
-    /* footer nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;     
-    } */
 
     footer nav ul {
-        /* display: flex; */
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
@@ -363,186 +370,53 @@ footer a:hover {
 }
 
 
-/* Large smartphones - navbar changes color */
+/* Large smartphones - footer changes color */
 @media screen and (max-width: 768px) {
     header {
-        background-color: #bb8588;
         justify-content: center;
-    }
-
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-    }
-
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
     }
 
     #about-me {
-        width: 100%;
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
         justify-content: center;
-        margin: center;        
     }
 
-    #about-me section {     
+    #about-me section, #main-container {     
         width: 100%;   
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        /* justify-content: center; */
-        margin: center;
     }
 
-    #work {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-        justify-content: center;
-    }
-
-    #main-container {
+    /* #main-container {
         width: 100%;   
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;
-    }
-
-    #inner-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;      
-    }
-
-    footer {
-        background-color: #bb8588;
-        justify-content: center;
-    }
-
-    /* footer h4 {
-        display: flex;
-        border-right: none;
-        width: auto;
     } */
 
-    /* footer nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;       
-    } */
-
-    footer nav ul {
-        /* display: flex;
-        flex-wrap: wrap; */
+    /* Inner-container figures are stacked on top of each other at 768px or smaller*/
+    /* Footer navigation links are stacked on top of each other at 768px or smaller */
+    #inner-container, footer nav ul {
+        /* The flex container's main-axis is the same as the block-axis */
         flex-direction: column;
-        /* justify-content: center;
-        margin: auto; */
-    }
-}
-
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-    header {
-        background-color: #8ac4ff;
-        justify-content: center;
-    }
-
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;
-    }
-
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;
-    }
-
-    #about-me {
-        width: 100%;
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;        
-    }
-
-    #about-me section {     
-        width: 100%;   
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        /* justify-content: center; */
-        margin: center;
-    }
-
-    #work {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-        justify-content: center;
-    }
-
-    #main-container {
-        width: 100%;   
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;
-    }
-
-    #inner-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;      
-    }
-
-    footer {
-        /* display: flex;
-        flex-wrap: wrap;   */
-        flex-direction: column;      
-        background-color: #8ac4ff;
-        /* justify-content: center; */
-        /* margin: center; */
-    }
-
-    /* footer h4 {
-        justify-content: center;
-        margin: center;
-    } */
-
-    footer nav {        
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center; */
-        margin: auto;               
     }
 
     /* footer nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: center;
+        flex-direction: column;
     } */
+
+    /* Footer background-color changes to hex #bb8588 at 768px or smaller */
+    footer {
+        background-color: #bb8588;
+        justify-content: center;
+    }
+}
+
+/* Small smartphones - footer changes color */
+@media screen and (max-width: 576px) {
+    footer {
+        /* Footer h4 and footer navigation links are stacked on top of each other at 576px or smaller */
+        flex-direction: column; 
+        /* Footer background-color changes to hex #8ac4ff at 576px or smaller */     
+        background-color: #8ac4ff;
+    }
+
+    /* Footer navigation links have the browser calculate and select a width at 576px or smaller */
+    footer nav { 
+        margin: auto;               
+    }
 }
