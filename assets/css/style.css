@@ -6,8 +6,10 @@
 }
 
 body {
-    background: #ddcedd;    
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Background color of whole body set to hex #ddcedd */
+    background: #ddcedd;
+    /* Font-family property specifies a list of fonts, from highest priority to lowest */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -59,7 +61,7 @@ header a {
 }
 
 /* Hover selector allows you to select and style an element when you mouse over it */
-header a:hover { 
+header a:hover {
     /* Background-color turns var(--light-green) after hovering over navigation links */
     background-color: var(--light-green);
     /* Color turns var(--light-blue) after hovering over navigation links */
@@ -68,7 +70,7 @@ header a:hover {
 }
 
 #about-me {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     /* The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-end side */
     justify-content: flex-end;
@@ -105,12 +107,12 @@ header a:hover {
     text-indent: 3em;
     border-width: 1px;
     line-height: 1.5;
-    font-size: 1.2em;    
+    font-size: 1.2em;
 }
 
-/* #about-me br {
-    text-indent: 3em;
-} */
+#about-me section p span {
+    margin-left: 3em;
+}
 
 #about-me section figure {
     /* Sets width to 22% relative to parent #about-me section */
@@ -130,14 +132,14 @@ header a:hover {
     width: 100%;
 }
 
-/* Main-container id for First Application section */
+/* Main-container id for First Application figure and ensuing figures */
 #main-container {
     display: flex;
     flex-direction: column;
     width: 65%;
 }
 
-/* Inner-container id for Second, Third, and Fourth Application divison */
+/* Inner-container id for Second, Third, and Fourth Application figures */
 #inner-container {
     display: flex;
     padding-top: 3em;
@@ -194,11 +196,18 @@ header a:hover {
     height: 50px;
 }
 
-#second-application, #fourth-application {
+#second-application,
+#fourth-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
 }
+
+/* #fourth-application {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.5;
+} */
 
 #third-application {
     position: relative;
@@ -210,18 +219,16 @@ header a:hover {
     opacity: 0.5;
 }
 
-/* #fourth-application {
-    position: relative;
-    cursor: pointer;
-    opacity: 0.5;
-} */
-
 /* Resets transparency back to normal or 1.0 after hovering over Second, Third, and Fourth Application figure */
-#second-application:hover, #third-application:hover, #fourth-application:hover {
+#second-application:hover,
+#third-application:hover,
+#fourth-application:hover {
     opacity: 1.0;
 }
 
-#second-application h3, #third-application h3, #fourth-application h3 {
+#second-application h3,
+#third-application h3,
+#fourth-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -272,7 +279,7 @@ footer {
 }
 
 footer h4 {
-     /* Sets footer h4 to 11% width relative to parent / footer */
+    /* Sets footer h4 to 11% width relative to parent / footer */
     width: 11%;
     text-align: center;
     color: var(--light-blue);
@@ -286,10 +293,9 @@ footer nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-     /* Sets footer nav to 63% width relative to parent / footer */
+    /* Sets footer nav to 63% width relative to parent / footer */
     width: 63%;
     font-size: 1.5em;
-
 }
 
 /* Unlisted items set to block-level element with no list-style */
@@ -320,10 +326,10 @@ footer a:hover {
 
 /* Tablets - footer changes color */
 @media screen and (max-width: 992px) {
-
     /* Header navigation and unlisted items are set to block level elements, flex items wrap onto multiple lines, 
     items are packed flush to each other toward the center, and have the browser calculate and select a margin at 992px or smaller  */
-    header nav, header nav ul {
+    header nav,
+    header nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -338,10 +344,11 @@ footer a:hover {
     } */
 
     /* #about-me h2 and footer h4 have solid borders to the right removed at 992px or smaller */
-    #about-me h2, footer h4 {
+    #about-me h2,
+    footer h4 {
         border-right: none;
         width: auto;
-    }  
+    }
 
     /* footer h4 {
         border-right: none;
@@ -353,9 +360,12 @@ footer a:hover {
         display: flex;
         justify-content: center;
     }
-    
+
     /* All application h3s have the browser calculate and select a width at 992px or smaller */
-    #first-application h3, #second-application h3, #third-application h3, #fourth-application h3 {
+    #first-application h3,
+    #second-application h3,
+    #third-application h3,
+    #fourth-application h3 {
         width: auto;
     }
 
@@ -382,8 +392,9 @@ footer a:hover {
         justify-content: center;
     }
 
-    #about-me section, #main-container {     
-        width: 100%;   
+    #about-me section,
+    #main-container {
+        width: 100%;
     }
 
     /* #main-container {
@@ -392,7 +403,8 @@ footer a:hover {
 
     /* Inner-container figures are stacked on top of each other at 768px or smaller*/
     /* Footer navigation links are stacked on top of each other at 768px or smaller */
-    #inner-container, footer nav ul {
+    #inner-container,
+    footer nav ul {
         /* The flex container's main-axis is the same as the block-axis */
         flex-direction: column;
     }
@@ -412,13 +424,13 @@ footer a:hover {
 @media screen and (max-width: 576px) {
     footer {
         /* Footer h4 and footer navigation links are stacked on top of each other at 576px or smaller */
-        flex-direction: column; 
-        /* Footer background-color changes to hex #8ac4ff at 576px or smaller */     
+        flex-direction: column;
+        /* Footer background-color changes to hex #8ac4ff at 576px or smaller */
         background-color: #8ac4ff;
     }
 
     /* Footer navigation links have the browser calculate and select a width at 576px or smaller */
-    footer nav { 
-        margin: auto;               
+    footer nav {
+        margin: auto;
     }
 }
