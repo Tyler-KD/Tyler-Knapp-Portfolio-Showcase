@@ -369,7 +369,7 @@ footer a:hover {
     #second-application h3,
     #third-application h3,
     #fourth-application h3,
-    #fifth-application {
+    #fifth-application h3 {
         width: auto;
     }
 
