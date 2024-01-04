@@ -209,7 +209,8 @@ header a:hover {
     opacity: 0.5;
 } */
 
-#third-application {
+#third-application,
+#fifth-application {
     position: relative;
     /* Third-application figure set with left of margin 20px from neighboring element */
     margin-left: 20px;
@@ -222,13 +223,15 @@ header a:hover {
 /* Resets transparency back to normal or 1.0 after hovering over Second, Third, and Fourth Application figure */
 #second-application:hover,
 #third-application:hover,
-#fourth-application:hover {
+#fourth-application:hover,
+#fifth-application:hover {
     opacity: 1.0;
 }
 
 #second-application h3,
 #third-application h3,
-#fourth-application h3 {
+#fourth-application h3,
+#fifth-application h3 {
     position: absolute;
     bottom: 50px;
     border-style: solid;
@@ -365,7 +368,8 @@ footer a:hover {
     #first-application h3,
     #second-application h3,
     #third-application h3,
-    #fourth-application h3 {
+    #fourth-application h3,
+    #fifth-application {
         width: auto;
     }
 
