@@ -240,8 +240,8 @@ header a:hover {
     font-size: 1.2em;
     text-align: center;
     color: var(--light-blue);
-    width: 200px;
-    height: 50px;
+    /* width: 200px;
+    height: 50px; */
 }
 
 /* #third-application h3 {
