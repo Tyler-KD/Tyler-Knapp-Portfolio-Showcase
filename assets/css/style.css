@@ -197,7 +197,8 @@ header a:hover {
 }
 
 #second-application,
-#fourth-application {
+#fourth-application,
+#sixth-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
@@ -224,15 +225,17 @@ header a:hover {
 #second-application:hover,
 #third-application:hover,
 #fourth-application:hover,
-#fifth-application:hover {
+#fifth-application:hover,
+#sixth-application:hover {
     opacity: 1.0;
 }
 
 #second-application h3,
 #third-application h3,
 #fourth-application h3,
-#fifth-application h3 {
-    position: absolute;
+#fifth-application h3,
+#sixth-application h3 {
+    /* position: absolute; */
     bottom: 50px;
     border-style: solid;
     background: var(--light-green);
@@ -329,6 +332,7 @@ footer a:hover {
 
 /* Tablets - footer changes color */
 @media screen and (max-width: 992px) {
+
     /* Header navigation and unlisted items are set to block level elements, flex items wrap onto multiple lines, 
     items are packed flush to each other toward the center, and have the browser calculate and select a margin at 992px or smaller  */
     header nav,
@@ -369,7 +373,8 @@ footer a:hover {
     #second-application h3,
     #third-application h3,
     #fourth-application h3,
-    #fifth-application h3 {
+    #fifth-application h3,
+    #sixth-application h3 {
         width: auto;
     }
 
@@ -412,6 +417,14 @@ footer a:hover {
         /* The flex container's main-axis is the same as the block-axis */
         flex-direction: column;
     }
+
+    #second-application h3,
+    #third-application h3,
+    #fourth-application h3,
+    #fifth-application h3,
+    #sixth-application h3 {
+        position: absolute;
+           }
 
     /* footer nav ul {
         flex-direction: column;
