@@ -198,7 +198,8 @@ header a:hover {
 
 #second-application,
 #fourth-application,
-#sixth-application {
+#sixth-application,
+#seventh-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
@@ -211,7 +212,8 @@ header a:hover {
 } */
 
 #third-application,
-#fifth-application {
+#fifth-application,
+#seventh-application {
     position: relative;
     /* Third-application figure set with left of margin 20px from neighboring element */
     margin-left: 20px;
@@ -226,7 +228,8 @@ header a:hover {
 #third-application:hover,
 #fourth-application:hover,
 #fifth-application:hover,
-#sixth-application:hover {
+#sixth-application:hover,
+#seventh-application:hover {
     opacity: 1.0;
 }
 
@@ -234,7 +237,8 @@ header a:hover {
 #third-application h3,
 #fourth-application h3,
 #fifth-application h3,
-#sixth-application h3 {
+#sixth-application h3,
+#seventh-application h3 {
     /* position: absolute; */
     bottom: 50px;
     border-style: solid;
@@ -374,7 +378,8 @@ footer a:hover {
     #third-application h3,
     #fourth-application h3,
     #fifth-application h3,
-    #sixth-application h3 {
+    #sixth-application h3,
+    #seventh-application h3 {
         width: auto;
     }
 
@@ -422,7 +427,8 @@ footer a:hover {
     #third-application h3,
     #fourth-application h3,
     #fifth-application h3,
-    #sixth-application h3 {
+    #sixth-application h3,
+    #seventh-application h3 {
         position: absolute;
            }
 
