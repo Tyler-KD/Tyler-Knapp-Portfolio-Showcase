@@ -199,7 +199,9 @@ header a:hover {
 #second-application,
 #fourth-application,
 #sixth-application,
-#seventh-application {
+#seventh-application,
+#eighth-application,
+#ninth-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
@@ -213,7 +215,9 @@ header a:hover {
 
 #third-application,
 #fifth-application,
-#seventh-application {
+#seventh-application,
+#eighth-application,
+#ninth-application {
     position: relative;
     /* Third-application figure set with left of margin 20px from neighboring element */
     margin-left: 20px;
@@ -229,7 +233,9 @@ header a:hover {
 #fourth-application:hover,
 #fifth-application:hover,
 #sixth-application:hover,
-#seventh-application:hover {
+#seventh-application:hover,
+#eighth-application:hover,
+#ninth-application:hover {
     opacity: 1.0;
 }
 
@@ -238,7 +244,9 @@ header a:hover {
 #fourth-application h3,
 #fifth-application h3,
 #sixth-application h3,
-#seventh-application h3 {
+#seventh-application h3,
+#eighth-application h3,
+#ninth-application h3 {
     /* position: absolute; */
     bottom: 50px;
     border-style: solid;
@@ -334,6 +342,14 @@ footer a:hover {
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
+@media screen and (max-width: 1245px) {
+    #inner-container,
+    footer nav ul {
+        /* The flex container's main-axis is the same as the block-axis */
+        flex-direction: column;
+    }
+}
+
 /* Tablets - footer changes color */
 @media screen and (max-width: 992px) {
 
@@ -379,7 +395,9 @@ footer a:hover {
     #fourth-application h3,
     #fifth-application h3,
     #sixth-application h3,
-    #seventh-application h3 {
+    #seventh-application h3,
+    #eighth-application h3,
+    #ninth-application h3 {
         width: auto;
     }
 
@@ -428,7 +446,9 @@ footer a:hover {
     #fourth-application h3,
     #fifth-application h3,
     #sixth-application h3,
-    #seventh-application h3 {
+    #seventh-application h3,
+    #eighth-application h3,
+    #ninth-application h3 {
         position: absolute;
            }
 
