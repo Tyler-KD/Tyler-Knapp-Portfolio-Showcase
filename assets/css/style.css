@@ -201,7 +201,9 @@ header a:hover {
 #sixth-application,
 #seventh-application,
 #eighth-application,
-#ninth-application {
+#ninth-application,
+#tenth-application,
+#eleventh-application {
     position: relative;
     cursor: pointer;
     opacity: 0.5;
@@ -217,7 +219,9 @@ header a:hover {
 #fifth-application,
 #seventh-application,
 #eighth-application,
-#ninth-application {
+#ninth-application,
+#tenth-application,
+#eleventh-application {
     position: relative;
     /* Third-application figure set with left of margin 20px from neighboring element */
     margin-left: 20px;
@@ -235,7 +239,9 @@ header a:hover {
 #sixth-application:hover,
 #seventh-application:hover,
 #eighth-application:hover,
-#ninth-application:hover {
+#ninth-application:hover,
+#tenth-application:hover,
+#eleventh-application:hover {
     opacity: 1.0;
 }
 
@@ -246,7 +252,9 @@ header a:hover {
 #sixth-application h3,
 #seventh-application h3,
 #eighth-application h3,
-#ninth-application h3 {
+#ninth-application h3,
+#tenth-application h3,
+#eleventh-application h3 {
     /* position: absolute; */
     bottom: 50px;
     border-style: solid;
@@ -342,12 +350,28 @@ footer a:hover {
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1650px) {
     #inner-container,
     footer nav ul {
         /* The flex container's main-axis is the same as the block-axis */
         flex-direction: column;
     }
+
+        /* All application h3s have the browser calculate and select a width at 1650px or smaller */
+        #first-application h3,
+        #second-application h3,
+        #third-application h3,
+        #fourth-application h3,
+        #fifth-application h3,
+        #sixth-application h3,
+        #seventh-application h3,
+        #eighth-application h3,
+        #ninth-application h3,
+        #tenth-application h3,
+        #eleventh-application h3 {
+            width: auto;
+            position: absolute;
+        }
 }
 
 /* Tablets - footer changes color */
@@ -397,8 +421,11 @@ footer a:hover {
     #sixth-application h3,
     #seventh-application h3,
     #eighth-application h3,
-    #ninth-application h3 {
+    #ninth-application h3,
+    #tenth-application h3,
+    #eleventh-application h3 {
         width: auto;
+        position: absolute;
     }
 
     /* Footer background-color changes to hex #772014 at 992px or smaller */
@@ -448,7 +475,9 @@ footer a:hover {
     #sixth-application h3,
     #seventh-application h3,
     #eighth-application h3,
-    #ninth-application h3 {
+    #ninth-application h3,
+    #tenth-application h3,
+    #eleventh-application h3 {
         position: absolute;
            }
 
